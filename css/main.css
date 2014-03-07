@@ -1,114 +1,64 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 960px;
-    margin-top: 24px;
+    width: 1000px;
 }
 
-.name {
-    font-size:  50px;
-    margin-top: 0px;
-    margin-bottom: 12px;
-    letter-spacing: 6px;
-}
-
-.subtitle {
-    text-align: center;
-    font-size: 30px;
-    margin-top: 0px;
-}
-
-body {
-    background-color: #F6F6FF;
-    color: #444444;
-    margin: 0;
-}
-
-.left-nav {
-    display: inline-block;
+.left-column {
+    width: 300px;
+    display: inline;
     float: left;
-    width: 200;
 }
 
 .right-column {
-    width: 720px;
-    float: right;
-    display: inline-block;
-}
-
-.content {
-    clear: both;
-    float: right;
+    width: 600px;
     display: inline;
-    width: 720px;
-}
-
-.line {
-    height: 10px;
-    background: #04859D;
-    border-radius:3px;
-}
-
-.title {
-    font-size: 40px;
-    letter-spacing: 4px;
-}
-
-.top-left {
-    background: #04859D;
-    float: left;
-    border-bottom: 1px solid #444444;
-    border-right: 1px solid #444444;
-}
-
-.top-right {
     float: right;
-    background: #04859D;
-    border-bottom: 1px solid #444444;
 }
 
 .row {
     clear: both;
 }
-.row div {
-    display: inline;
-    width: 100px;
+
+
+.left-column .inline-block {
+    display: inline-block;
+    text-align: center;
+}
+
+.home {
+    width: 80px;
     height: 100px;
-    position: relative;
-    font-size: 18px;
-    text-align: center;
-
-}
-
-.row div p {
-    margin-top: 40px;
-    color: #FFFFFF;
-}
-
-.bot-left{
     float: left;
-    text-align: center;
-     background: #04859D;
-      border-right: 1px solid #444444;
+     margin-right: 14px;
 }
 
-.bot-right { 
-    position: relative;
-    float: right;
-    text-align: center;
-     background: #04859D;
+.icon {
+    width: 50px;
+    height: 50px;
+    display: inline;
 }
 
-/*Important:*/
-.link-spanner{
-  position:absolute; 
-  width:100%;
-  height:100%;
-  top:0;
-  left: 0;
-  z-index: 1;
+.profile .icon {
+    width: 55px;
+    height: 55px;
+}
 
-  /* edit: fixes overlap error in IE7/8, 
-     make sure you have an empty gif 
-  background-image: url('empty.gif');*/
-}   
+.travel {
+    width: 80px;
+    margin-left: 14px;
+    margin-right: 14px;
+    float: left;
+}
+
+.profile {
+    width: 80px;
+    margin-left: 14px;
+    float: left;
+
+}
+
+ 
+
+
+
