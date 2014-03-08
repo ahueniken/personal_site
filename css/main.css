@@ -1,3 +1,9 @@
+body {
+    font-family: Lato, sans-serif;
+    color: #333335;
+    margin: 0px;
+    background: #FDFDFF;
+}
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -8,16 +14,19 @@
     width: 300px;
     display: inline;
     float: left;
+    padding-top: 80px;
 }
 
 .right-column {
     width: 600px;
     display: inline;
     float: right;
+    padding-top: 60px;
 }
 
 .row {
     clear: both;
+    display: block;
 }
 
 
@@ -27,10 +36,10 @@
 }
 
 .home {
-    width: 80px;
-    height: 100px;
+    width: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     float: left;
-     margin-right: 14px;
 }
 
 .icon {
@@ -42,23 +51,71 @@
 .profile .icon {
     width: 55px;
     height: 55px;
+    margin-top: -3px;
+    margin-bottom: -2px;
 }
 
 .travel {
-    width: 80px;
-    margin-left: 14px;
-    margin-right: 14px;
+    width: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
     float: left;
 }
 
 .profile {
-    width: 80px;
-    margin-left: 14px;
+    width: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     float: left;
 
 }
 
- 
+.outline-active {
+    border: 3px solid #333333;
+    border-radius: 15px;
+}
+
+.outline-inactive {
+    padding-top: 13px;
+}
+
+.icon-title {
+    margin: 0px;
+}
+
+.name {
+    padding-top: 30px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.links p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight:400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 24px;
+}
+
+.links {
+    margin-top: 36px;
+}
 
 
 
+.title {
+    font-weight: 700;
+    letter-spacing: 5px;
+
+}
