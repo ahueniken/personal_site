@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title> Adam Hueniken </title>
+  <meta name="description" content="Adam Hueniken's personal site">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../css/normalize.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+  <!-- <script src="js/modernizr.js"></script> !-->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48601913-1', 'adamhueniken.com');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="left-column">
+      <div class="row-icons">
+        <div class="wrapper">
+          <div class="home inline-block home-border">
+            <object class="icon" data="../img/lightbulb.svg" type="image/svg+xml">
+              <img class="icon" src="../img/lightbulb.png" />
+            </object>
+            <a href="/index.html"> <span> </span> </a>
+            <p class="icon-title"> My Work </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="travel inline-block outline-inactive">
+            <object class="icon" data="../img/world.svg" type="image/svg+xml">
+              <img class="icon" src="../img/world.png" />
+            </object>
+            <a href="/travel.html"> <span> </span> </a>
+            <p class="icon-title">  Travel </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="profile inline-block outline-inactive">
+            <object class="icon" data="../img/profile.svg" type="image/svg+xml">
+              <img class="icon" src="../img/profile.png" />
+            </object>
+            <a href="/profile.html"> <span> </span> </a>
+            <p class="icon-title"> Profile </p>
+          </div>
+        </div>
+      </div>
+      <div class="row-titles">
+        <h2 class="name"> ADAM HUENIKEN </h2>
+        <h3 class="subtitle"> Regularly obsessed with something new </h3>
+      </div>
+      <div class="links">
+        <p> <a href="http://www.twitter.com/adamhueniken"> TWITTER </a></p>
+        <p> <a href="http://www.github.com/ahueniken"> GITHUB </a> </p>
+        <p> <a href="http://www.linkedin.com/pub/adam-hueniken/42/435/346"> LINKEDIN </a> </p>
+      </div>
+    </div>
+    <div class="right-column smaller">
+      <div class="article">
+          <h1> Organizing a Hackathon - Lessons Learned </h2>
+          <h5> March 31st, 2014 </h5>
+          <p> During my last two years of school, I’ve helped organize and run two hackathons at the University of Toronto. In February 2013 I ran (winged may be more accurate) a Windows Phone Hackathon, and just recently ran the C3 Hackathon. I wanted to take some time and write-out a few of my lessons-learned, so I don’t repeat the same mistakes next year and maybe provide some insight to others who are looking to run a hackathon.This post focuses on the C3 Hackathon which was an event open to any students, and all platforms will also include anecdotes comparing this event to the Windows Phone Hackathon as well. </p>
+          <h2> Making a Hackathon accessible to beginners </h2>
+          <p> One of our main goals this year was to make the event accessible and open to beginners. Hackathons can be intimidating for those who have never done them, and we didn’t want any students to miss out. </p>
+          <p> To accomplish this we tried to do a few things: </p>
+          <ol> <li> Ensure all our marketing and messaging for the event encouraged people of all skill level to come out. </li>
+            <li> Partnered with U of T Dev to promote Android & iOS tutorials in the months leading up to the event. </li>
+            <li> Provided a couple of mentors during the event.   </li>
+          </ol>
+          <p> These were mildly successful as we had a number of beginners out at the event, however there was a lot more we could do to make the process easier on them. 
+          </p>
+          <h3> Getting a Dev Environment Set Up Before the Event </h3>
+          <p> A lot of beginners had considerable trouble with their dev environment. Whether it was setting up Eclipse & Android (this was literally 90% of our problems), or were trying Git with their team for the first time. This slowed down a lot of people and it was very disheartening when they had to install Eclipse multiple times. </p>
+          <p> Increasing our messaging about the importance of having this set up beforehand could help but I think that more needs to be done to properly solve this issue. Next year I intend to provide an explicit session a few days before the event about setting up and configuring a dev environment (at least for those who are local to Toronto). We obviously can’t cater to all platforms with this prep, but as Android was the most popular by far this year we would likely focus the event on getting Android configured. </p>
+          <h3> Mentors </h3>
+          <p> This year I was mentoring teams as needed throughout the day (with Git, Rails, and to the best of my ability with Android), and we had a proper Android mentor come to help out late Saturday night.  This was a good start however we definitely needed more help at the beginning to get people jump-started. These first few hours are critical to a hackathon, as it sets the tone for the duration of the event. For people at their first hackathon it’s even more important, if they start making progress they’ll be much more motivated to keep working all weekend long. </p>
+          <p> If your event is open to all platforms I’d suggest that you pick a specific platform which you’ll provide support for beginners. This will reduce your workload and also help beginners pick a platform as many at our event weren’t sure what to choose or changed their mind partway through.  </p>
+          <p class="highlight-section"> Side-note: Windows Phone as a platform I feel is much easier than Android for beginners to get a basic app up and running on. Two years ago when we ran a Windows Phone hackathon even though everyone was brand new to the platform pretty much everyone was able to make good progress with their app. </p>
+          <h2> Charging vs. Free Events </h2>
+          <p> During the planning phase for the hackathon I wavered and agonized over this decision continuously. All of the other events I run through Hacker Academy are free, charging for one felt strange and not entirely in the spirit of the club. I also really wanted to ensure there were zero barriers to entry for students. However in the end we charged 5$ to help offset the costs, and have a more accurate headcount of who would show up going in to the event.  </p>
+          <p> After charging for the event I probably won’t go back to a free hackathon because it made the logistics way simpler. Here’s some numbers from the hackathons: </p>
+          <div class="grey-bg">
+          <table>
+              <tr> 
+                <th> </th>
+                <th> PRICE </th>
+                <th> REGISTRATIONS </th>
+                <th> ATTENDEES </th>
+              <tr>
+                <td> WP Hackathon </td>
+                <td> Free </td>
+                <td> 190 </td>
+                <td> 130 Day 1, 85 Day 2</td>
+              </tr>
+              <tr>
+                <td> C3 Hackathon </td>
+                <td> $5 </td>
+                <td> 110 </td>
+                <td> 85 Day 1, 80 Day 2</td>
+              </tr>
+            </table>
+          </div>
+          <h2> Theme vs No Theme </h2>
+          <p> A lot of people were surprised that our hackathon didn’t have any theme or specific focus this year. We chose to have a wide open hackathon because we didn’t want to restrict students at all. Speaking from experience just about every student I know has something they would have liked to build but couldn’t get around to.  </p>
+          <h3> Did this make it hard for the judges? </h3>
+          <p> It could potentially make things complicated but we were clear with our rubric and our judges came to a consensus on winners pretty easily. </p>
+          <h3> Doesn't a theme help attendance? </h3>
+          <p> I’m not sure no theme will work for everyone as a theme can really help to draw people out (especially if you’re targeting developers in big tech cities as oftentimes there’s a hackathon ever weekend for them). However since 2010 I can only really think of 2 other hackathons at U of T so we didn’t have too much competition to draw students out.  </p>
+          <p> A theme could also help people generate ideas though, so it’s something I’ll still consider for next year.  </p>
+          <h2> Quick Notes </h2>
+          <ul>
+            <li> I like our judging format. 1st round are roaming judges doing casual demos / q&a with each team. They choose 10 finalists who present for everyone and a second panel of judges. From the finalists the eventual winners are chosen. </li>
+            <li> We should make more of a show at the end of the event. Some incredible apps were created and we can do more to make them feel like they won an awesome event other than giving them their cash. </li>
+            <li> We will consider having guest speakers / tech talks during the event. We didn’t feel the need to this year as we run other events through Hacker Academy which provide these to students. However it could potentially add to the hackathon. </li>
+            <li> Don’t procrastinate, especially on judges & sponsorship. All the obvious things we always want to do better at. </li>
+          </ul>
+          <p> All in all I loved organizing the hackathon. It’s a little insane leading up to the event, however what people are able to build and create in a weekend always blows my mind. People also seem to learn a lot and have fun which is awesome too! </p>
+          <p> If you’ve got questions or comments about this post please reach out or follow  me <a href="http://www.twitter.com/adamhueniken"> @ahueniken </a> on Twitter. </p>
+
+      </div>
+      <footer>
+        <p> &copy;2014 - Adam Hueniken </p>
+      </footer>
+    </div>
+
+  </div>
+
+</body>
+</html>
