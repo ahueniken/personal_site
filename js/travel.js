@@ -112,33 +112,26 @@ $(document).ready(function() {
 	var g = svg.append("g");
 
 	var routes = [
-	{
-		type: "LineString", 
-		coordinates: [[-79.4,43.7], [-21.9333,64.1333]]
-	}, {
-		type: "LineString", 
-		coordinates: [[-21.9333,64.1333], [-3.0518,56.3129]]
-	}, {
-		type: "LineString", 
-		coordinates: [[8.6858,50.1117], [100.4667,13.7500]]
-	}, {
-		type: "LineString", 
-		coordinates: [[100.4667,13.7500], [126.9667,37.5500]]
-	}, {
-		type: "LineString", 
-		coordinates: [[126.9667,37.5500], [139.6917,35.6895]]
-	}, {
-		type: "LineString", 
-		coordinates: [ [139.6917,35.6895], [-79.4,43.7]]
-	},
+		{
+			type: "LineString", 
+			coordinates: [[-79.4,43.7], [-21.9333,64.1333]]
+		}, {
+			type: "LineString", 
+			coordinates: [[-21.9333,64.1333], [-3.0518,56.3129]]
+		}, {
+			type: "LineString", 
+			coordinates: [[8.6858,50.1117], [100.4667,13.7500]]
+		}, {
+			type: "LineString", 
+			coordinates: [[100.4667,13.7500], [126.9667,37.5500]]
+		}, {
+			type: "LineString", 
+			coordinates: [[126.9667,37.5500], [139.6917,35.6895]]
+		}, {
+			type: "LineString", 
+			coordinates: [ [139.6917,35.6895], [-79.4,43.7]]
+		},
 	];
-	var h = svg.selectAll("routes")
-		.data(routes)
-		.enter().append("path")
- 		.attr("class", "route")
-		.attr("d", path);
-
-
 
 	// load and display the World
 	d3.json("json/countries.topo.json", function(error, topology) {
@@ -151,14 +144,21 @@ $(document).ready(function() {
 	});
 
 	svg.selectAll("places")
-	.data(places)
-	.enter().append("circle", ".pin")
-	.attr("r", 3.5)
-	.attr("transform", function(d) {
-		return "translate(" + projection([
-			d.location.longitude,
-			d.location.latitude
-			]) + ")"
-});  
+		.data(places)
+		.enter().append("circle", ".pin")
+		.attr("r", 3.5)
+		.attr("transform", function(d) {
+			return "translate(" + projection([
+				d.location.longitude,
+				d.location.latitude
+				]) + ")"
+		}); 
+
+	svg.selectAll("routes")
+		.data(routes)
+		.enter().append("path")
+ 		.attr("class", "route")
+		.attr("d", path);
+
 });
 console.log("p should be purple");
