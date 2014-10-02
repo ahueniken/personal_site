@@ -133,6 +133,8 @@ $(document).ready(function() {
 		},
 	];
 
+	
+
 	// load and display the World
 	d3.json("json/countries.topo.json", function(error, topology) {
 		g.selectAll("path")
@@ -144,16 +146,16 @@ $(document).ready(function() {
 	});
 
 	svg.selectAll("places")
-		.data(places)
-		.enter().append("circle", ".pin")
-		.attr("r", 3.5)
-		.attr("transform", function(d) {
-			return "translate(" + projection([
-				d.location.longitude,
-				d.location.latitude
-				]) + ")"
-		}); 
-
+	.data(places)
+	.enter().append("circle", ".pin")
+	.attr("r", 3.5)
+	.attr("transform", function(d) {
+		return "translate(" + projection([
+			d.location.longitude,
+			d.location.latitude
+			]) + ")"
+	}); 
+	
 	svg.selectAll("routes")
 		.data(routes)
 		.enter().append("path")

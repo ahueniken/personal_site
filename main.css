@@ -578,11 +578,11 @@ path {
 }
 
 circle {
-    fill: #00C000;
+    fill: #00DD00;
 }
 
 .route {
     stroke-width: 2px;
     fill: none;
-    stroke: #00C000;
+    stroke: cyan;
 }
